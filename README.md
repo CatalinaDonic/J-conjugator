@@ -1,26 +1,28 @@
 # J-conjugator
-A program that conjugates Japanese words into different forms (polite, plain, negative, past).
+A python-based tool that conjugates Japanese verbs into different forms (polite, negative, past) and presents a quiz to help users test their knowledge.
 
 # Introduction
-Japanese verbs and adjectives have multiple forms that vary based on tense, politeness level and context. Conjugation is challenging, essential yet complex skill for learners. To aid in this process, I propose creating a Python-based tool named "J-conjugator", which will serve as an interactive platform to conjugate Japanese verbs and adjectives, creating a practical and useful database that's easy and accessible to use.
+Japanese verbs have multiple forms that vary based on tense, politeness level and context. Conjugation is challenging, essential yet complex skill for learners. To aid in this process, we introduce "J-conjugator", which will serve as an interactive platform to help learners practice conjugating verbs. It features a database of commonly used basic verbs, user-friendly interface and an engaging quiz to make learning both effective and fun.
 
 # Objective
-Develop a program that:
+The program aims to:
 * Conjugates japanese verbs into various forms (polite, plain, negative, past)
-* Handles adjectives (i-adjectives and na-adjectives) including their conjugations for tense and negation.
 * A simple and user-friendly interface for learners to practice.
+* The program is a fun quiz with 4 answers and a scoring system.
+* Offer an interactive quiz format with scoring and instant feedback on incorrect answers.
 
-The program will:
-1. Include a built-in dictionary of common Japanese verbs and adjectives.
-2. Allow users to input custom verbs and adjectives.
-3. Support conjugation types such as:
-   Verbs: polite, plain, negative, past and te-form.
-   adjectives: polite, negative, past negative, etc.
-4. Output conjugated forms clearly.
-5. Feature an interactive GUI for an enhanced user experience.
+# Features
+1. Conjugates japanese verbs into polite, negative or past tense form.
+2. Quiz with four possible answers, a scoring system, and feedback on incorrect answers.
+3. Interactive GUI for easy user experience.
+4. Includes a built-in dictionary of beginner-level japanese verbs.
 
 # Approach
-* Use Python to encode the rules for conjugating verbs and adjectives based on their types.
+* Use Python to encode the rules for conjugating verbs based on their types and the ending of the word.
 * Data storage: Use a python dictionary to store verbs and adjectives along with their types.
-* Enable user expansion of the dictionary by adding new words.
-* Text-based input for selection of word selection and conjugation type.
+* No input needed from the user to make it easier to use and not requiring japanese keyboard.
+
+# Requirements
+Python 3.x
+tkinter
+random
