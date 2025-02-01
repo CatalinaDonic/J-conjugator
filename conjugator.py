@@ -125,6 +125,7 @@ class JapaneseConjugator:
             return stem + ("します" if form == "polite" else "さない" if form == "negative" else "した")
         else:
             return verb
+        
     # function to conjugate 'ru'-type verbs
     def conjugate_verb_ru(self, verb, form):
         stem = verb[:-1]
@@ -154,7 +155,7 @@ class JapaneseConjugator:
         else:
             return verb
 
-    # Function to classify the verb to the correct conjugation function, according to the verb dictionary
+    # Function that classifies the verb to the correct conjugation function, according to the verb dictionary
     def conjugate_verb(self, verb, form):
         verb_type = self.verbs.get(verb, None)
         if verb_type == "u":
@@ -209,7 +210,7 @@ class JapaneseConjugator:
             for i, answer in enumerate(all_answers):
                 buttons[i].config(text=answer, command=lambda a=answer: check_answer(a, correct_answer))
 
-        # Make sure the message displayed to the user includes the actual correct answer
+        # Make sure the message displayed to the user includes the actual correct answer and add 1 point per correct answer
         def check_answer(selected_answer, correct_answer):
             nonlocal score_label
             if selected_answer == correct_answer:

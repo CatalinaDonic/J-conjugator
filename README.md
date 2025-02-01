@@ -24,5 +24,5 @@ The program aims to:
 
 # Requirements
 Python 3.x
-tkinter
-random
+`tkinter`
+`random`
