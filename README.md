@@ -24,7 +24,13 @@ The program aims to:
 
 # Requirements
 Python 3.x
+
 `tkinter`
+
+
 `random`
+
+# How to run
+Download `conjugator.py` to your computer and run the code locally. Press start to begin the quiz.
 
 This project was written as part of Gabor Szabo's [python course](https://github.com/szabgab/wis-python-course-2024-11).
