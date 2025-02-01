@@ -26,3 +26,5 @@ The program aims to:
 Python 3.x
 `tkinter`
 `random`
+
+This project was written as part of Gabor Szabo's [python course](https://github.com/szabgab/wis-python-course-2024-11).
